@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{:url('Computerpay/pay')}" enctype="application/x-www-form-urlencoded" type="post">
+    <div id="body1" class="show" name="divcontent">
+        <dl class="content">
+            <dt>商户订单号
+                ：</dt>
+            <dd>
+                <input id="WIDout_trade_no" name="WIDout_trade_no" />
+            </dd>
+            <hr class="one_line">
+            <dt>订单名称
+                ：</dt>
+            <dd>
+                <input id="WIDsubject" name="WIDsubject" />
+            </dd>
+            <hr class="one_line">
+            <dt>付款金额
+                ：</dt>
+            <dd>
+                <input id="WIDtotal_amount" name="WIDtotal_amount" />
+            </dd>
+            <hr class="one_line">
+            <dt>商品描述：</dt>
+            <dd>
+                <input id="WIDbody" name="WIDbody" />
+            </dd>
+            <hr class="one_line">
+            <dt></dt>
+            <dd id="btn-dd">
+                <span class="new-btn-login-sp">
+                    <button class="new-btn-login" type="submit" style="text-align:center;">立即购买</button>
+                </span>
+            </dd>
+        </dl>
+    </div>
+</form>
+</body>
+</html>
